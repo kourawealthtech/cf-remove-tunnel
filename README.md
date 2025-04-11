@@ -16,6 +16,7 @@ jobs:
       - uses: kourawealthtech/cf-remove-tunnel@v1.0
         with:
           name: "some-tunnel-name"
+          account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           token: ${{ secrets.CLOUDFLARE_TOKEN }}
 ```
 

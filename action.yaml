@@ -7,6 +7,9 @@ inputs:
     description: "Tunnel ID"
   name:
     description: "Tunnel name"
+  account_id:
+    description: "CloudFlare Account ID"
+    required: true
   token:
     description: "CloudFlare API token"
     required: true
