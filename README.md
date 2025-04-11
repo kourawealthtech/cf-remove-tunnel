@@ -1,6 +1,6 @@
 # Delete Tunnel Action for GitHub
 
-Removes CloudFlare ZeroTrustTunnel by ID or name.
+Removes CloudFlare ZeroTrust Tunnel by ID or name.
 
 ## Usage via Github Actions
 
