@@ -15,7 +15,7 @@ const getCurrentTunnelId = () => {
   const { status, stdout } = cp.spawnSync("curl", [
     ...["--header", `Authorization: Bearer ${process.env.INPUT_TOKEN}`],
     ...["--header", "Content-Type: application/json"],
-    `${CF_API_BASE_URL}/tunnels?${params.toString()}`,
+    `${CF_API_BASE_URL}/cfd_tunnel?${params.toString()}`,
   ]);
 
   if (status !== 0) {
@@ -45,7 +45,7 @@ const deleteTunnel = (id) => {
     ...["--silent", "--request", "DELETE"],
     ...["--header", `Authorization: Bearer ${process.env.INPUT_TOKEN}`],
     ...["--header", "Content-Type: application/json"],
-    `${CF_API_BASE_URL}/tunnels/${id}`,
+    `${CF_API_BASE_URL}/cfd_tunnel/${id}`,
   ]);
 
   if (status !== 0) {
